@@ -1,4 +1,4 @@
-const mongoose = require("express");
+const mongoose = require("mongoose");
 
 const peopleSchema = mongoose.Schema({
     name: {
@@ -13,7 +13,7 @@ const peopleSchema = mongoose.Schema({
         lowercase: true,
     },
     mobile: {
-        trpe: String,
+        type: String,
         require: true,
     },
     password: {
